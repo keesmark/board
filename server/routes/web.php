@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/folder/{id}/tasks', 'TaskController@index')->name('tasks.index');

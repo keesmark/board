@@ -19,18 +19,21 @@ services:
       - php
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0.3
     container_name: db-host
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: board
       MYSQL_USER: root
       MYSQL_PASSWORD: password
       TZ: 'Asia/Tokyo'
-    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --innodb_use_native_aio=0
     volumes:
       - ./docker/db/data:/var/lib/mysql
       - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
       - ./docker/db/sql:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
+
+volumes:
+  db-store:
