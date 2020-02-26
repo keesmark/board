@@ -2,9 +2,14 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/server/.env" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/app/Folder.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/app/Http/Controllers/TaskController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/app/Task.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/database/migrations/2020_02_25_073309_create_folders_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/database/migrations/2020_02_26_015727_create_tasks_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/database/migrations/2020_02_26_015727_create_tasks_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/database/seeds/FoldersTableSeeder.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/database/seeds/TasksTableSeeder.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/public/css/styles.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/resources/views/tasks/index.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/routes/web.php" charset="UTF-8" />
